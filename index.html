@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Concept</title>
+  <link rel="stylesheet" href="assets/css/stylesheet.css">
+  <script src="assets/js/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="brand" href="/">Restaurant Concept</a>
+
+      <div class="nav-actions">
+        <div class="dropdown">
+          <button class="dropbtn" type="button" aria-haspopup="true" aria-expanded="false" aria-controls="menuDropdown">
+            Menu
+          </button>
+          <div id="menuDropdown" class="dropdown-content" role="menu" aria-label="Menu links">
+            <a href="#appetizers" role="menuitem">Appetizers</a>
+            <a href="#main-courses" role="menuitem">Main Courses</a>
+            <a href="#desserts" role="menuitem">Desserts</a>
+            <a href="#beverages" role="menuitem">Beverages</a>
+          </div>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-btn">About</a></li>
+          <li><a href="#contact" class="nav-btn">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="about">
+      <h1>Welcome to Restaurant Concept</h1>
+      <p>Fresh flavors, thoughtfully prepared.</p>
+    </section>
+
+    <section class="photo-gallery-section" aria-label="Restaurant photo gallery">
+      <div class="section-heading">
+        <p class="eyebrow">A look inside</p>
+        <h2>Dining in every detail</h2>
+      </div>
+
+      <div class="gallery-layout">
+        <div class="gallery-feature">
+          <img id="featureImage" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" alt="Elegant restaurant dining room" />
+          <div class="gallery-caption">
+            <h3 id="featuredTitle">Warm candlelit evenings</h3>
+            <p id="featuredCaption">An intimate dining experience designed for lingering conversations and unforgettable plates.</p>
+          </div>
+        </div>
+
+        <div class="gallery-thumbs" aria-label="Photo gallery thumbnails">
+          <button class="gallery-item active" type="button" data-image="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" data-title="Warm candlelit evenings" data-caption="An intimate dining experience designed for lingering conversations and unforgettable plates.">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Warm candlelit dining room" />
+          </button>
+          <button class="gallery-item" type="button" data-image="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=80" data-title="Chef's table moments" data-caption="Crafted plates and close attention to every detail, from prep to presentation.">
+            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=600&q=80" alt="Chef preparing a plated dish" />
+          </button>
+          <button class="gallery-item" type="button" data-image="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80" data-title="Signature flavors" data-caption="Fresh ingredients, balanced textures, and a menu built to delight the senses.">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=600&q=80" alt="Plated gourmet dish" />
+          </button>
+          <button class="gallery-item" type="button" data-image="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80" data-title="A refined ambiance" data-caption="Soft lighting, thoughtful details, and a setting that feels effortlessly elevated.">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=80" alt="Restaurant interior and ambiance" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu">
+      <div class="section-heading menu-heading">
+        <p class="eyebrow">Curated favorites</p>
+        <h2>Our Menu</h2>
+      </div>
+
+      <div class="menu-grid">
+        <article id="appetizers" class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-tag">Starter</span>
+            <span class="menu-price">$16</span>
+          </div>
+          <h3>Appetizers</h3>
+          <p>House-made bread, calamari, and seasonal bites.</p>
+        </article>
+        <article id="main-courses" class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-tag">Signature</span>
+            <span class="menu-price">$28</span>
+          </div>
+          <h3>Main Courses</h3>
+          <p>Signature entrées with fresh ingredients and bold flavor.</p>
+        </article>
+        <article id="desserts" class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-tag">Sweet</span>
+            <span class="menu-price">$12</span>
+          </div>
+          <h3>Desserts</h3>
+          <p>Warm desserts and elegant finishes for every table.</p>
+        </article>
+        <article id="beverages" class="menu-card">
+          <div class="menu-card-header">
+            <span class="menu-tag">Pairing</span>
+            <span class="menu-price">$9</span>
+          </div>
+          <h3>Beverages</h3>
+          <p>Craft cocktails, wine, and house-made seasonal drinks.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <address>
+        123 Main Street<br>
+        Anytown, USA<br>
+        <a href="mailto:hello@example.com">hello@example.com</a>
+      </address>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Restaurant Concept. All rights reserved.</p>
+  </footer>
+</body>
+</html>
